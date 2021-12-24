@@ -1,4 +1,4 @@
-#Exercise #2
+#Exercise #1
 
 print("Exercise #1\n")
 listFoods = ["pizza", "loukoumades", "melomakarona", "kourampiedes", "tzaziki", "paidakia"]
