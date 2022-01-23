@@ -63,7 +63,7 @@ TopMinor_times = sorted(sortedMinor_GC_specific_field, reverse=True)[0:3]
 for timestamps in TopMinor_times:
     for logs in Minor_GC:
         if timestamps in logs:
-            print(logs, end='')
+            print(f"{logs.split(' ')[0].replace('+0000:','+0000')}, {logs.split(',')[1].replace(']','')}", end='')
 
 """Average time"""
 float_sorted_timesMinor = []
@@ -95,7 +95,7 @@ TopFull_times = sorted(sortedFull_GC_specific_field, reverse=True)[0:3]
 for timestamps in TopFull_times:
     for logs in Full_GC:
         if timestamps in logs:
-            print(logs, end='')
+            print(f"{logs.split(' ')[0].replace('+0000:','+0000')}, {logs.split(',')[1].replace(']','')}",end='')
 
 """Average time"""
 float_sorted_timesFull = []
