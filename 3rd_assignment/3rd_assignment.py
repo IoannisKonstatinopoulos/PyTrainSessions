@@ -42,7 +42,6 @@ def report_to_csv(json_curry):
 
     column_order = ['Project', 'SYSID', 'Service', 'TLC', 'hostname']  # Tried to set a list of ordered columns but unsucessfully couldn't find the method - note that doesn't affect the funcionality of the program
     try:
-        print(json_curry)
         read_json = pandas.read_json(json.dumps(json_curry), orient=column_order)
         read_json.to_csv('final.csv')
         return print("Passed Successfully.")
